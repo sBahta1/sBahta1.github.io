@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .accordion {
-    background-color: #eee;
+    background-color: skyblue;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -17,7 +17,9 @@
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: white;
+    color:skyblue;
+    border:solid 1px skyblue
 }
 
 .panel {
@@ -39,26 +41,29 @@ h3{
 </head>
 <body>
 
-<h2>Animated Accordion</h2>
-<p>Click on the buttons to open the collapsible content.</p>
+<h2 style="text-align:center">Samuel Bahta</h2>
+<p style="text-align:center">Work Experience</p>
 
 <button class="accordion">Dandelion Chocolate</button>
 <div class="panel">
-  <h5>San Francisco,CA - 07/14-03/15</h5>
+  <h5>San Francisco, CA <br> 07/14-03/15</h5>
   <h3>Chocolate Maker</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Tasked with facilitating full process of artisan chocolate production within a small production team. Adhering to strict guidelines of the chocolate processing to ensure all final products reach the highest degree of quality and consistancy. Receiving and processing raw materials.</p>
 </div>
 
 <button class="accordion">Harriet Brasserie</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<h5>Minneapolis, MN <br> 02/13-07/14</h5>
+    <h3>Server/Shift Manager</h3>
+  <p>Management of staff during service hours. Ensuring quality service and customer relations. Ordering, receiving, organizing, and stocking dry goods as well as beverages; both alcoholic and non. Ensuring cleanliness and presentability of restaurant. Server/lead bartender. 
+</p>
 </div>
 
 <button class="accordion">Rogue Chocolatier</button>
 <div class="panel">
-	<h5>Minneapolis,MN - 09/09-07/14</h5>
+	<h5>Minneapolis, MN <br> 09/09-07/14</h5>
     <h3>Chocolate Maker</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Sole employee charged with facilitating full process of artisan chocolate production. Receiving and processing raw materials. Packaging and shipping of final product. Maintaining production facility.</p>
 </div>
 
 <script>
