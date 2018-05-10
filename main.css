@@ -1,9 +1,52 @@
-body, header{
-  text-align: center;
-  font-family: didot
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
 h1{
   text-align: center;
-  font-family: didot, avenir next;
-  font-size: 32px
-}
+  font-family: Didot;
+  font-size: 32px;
+  } 
+.btn{ 
+	border: solid 2px;
+    background-color:black;
+    font-size: 16px;
+    color: white;
+    border-radius:5px
+    }
+.btn:hover{
+	border:solid 2px limegreen;
+    background-color:limegreen;
+    }
+.Expir:hover{
+    border:solid 2px red;
+    background-color:red;
+    }
+.Edu:hover{
+	border:solid 2px lightblue;
+    background-color:lightblue;
+    }
+.skills:hover{
+	border:solid 2px orange;
+    background-color:orange;
+    }
+.cont:hover{
+	border:solid 2px purple;
+    background-color:purple;
+    }
+</style>
+  </head>
+  
+  <body>
+      <h1> SAMUEL BAHTA
+      </h1>
+    <div>
+    <nav>
+        <button class="btn Expir">Experience</button><br>
+		<button class="btn Edu">Education</button><br>
+		<button class="btn skills">Skills</button><br>
+		<button class="btn cont">Contact</button><br>
+	</nav>
+    </div>
+  </body>
+ </html>
