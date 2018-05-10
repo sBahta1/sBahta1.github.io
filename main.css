@@ -10,6 +10,7 @@ h1{
 .btn{ 
 	border: solid 2px;
     background-color:black;
+    font-family: Didot;
     font-size: 16px;
     color: white;
     border-radius:5px
@@ -19,12 +20,12 @@ h1{
     background-color:limegreen;
     }
 .Expir:hover{
-    border:solid 2px red;
-    background-color:red;
+    border:solid 2px skyblue;
+    background-color:skyblue;
     }
 .Edu:hover{
-	border:solid 2px lightblue;
-    background-color:lightblue;
+	border:solid 2px red;
+    background-color:red;
     }
 .skills:hover{
 	border:solid 2px orange;
