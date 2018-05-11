@@ -1,30 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Prime resume</title>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+h1{
+  text-align: center;
+  font-family: Didot;
+  font-size: 32px;
+  } 
+.btn{ 
+	border: solid 2px;
+    background-color:black;
+    font-family: Didot;
+    font-size: 16px;
+    color: white;
+    border-radius:5px
+    }
+.btn:hover{
+	border:solid 2px limegreen;
+    background-color:limegreen;
+    }
+.Expir:hover{
+    border:solid 2px skyblue;
+    background-color:skyblue;
+    }
+.Edu:hover{
+	border:solid 2px red;
+    background-color:red;
+    }
+.skills:hover{
+	border:solid 2px orange;
+    background-color:orange;
+    }
+.cont:hover{
+	border:solid 2px purple;
+    background-color:purple;
+    }
+    .accordion {
+    background-color: skyblue;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    
+}
+
+.active, .accordion:hover {
+    background-color: white;
+    color:skyblue;
+    border:solid 1px skyblue
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+h5{
+	text-align:center;
+	padding:1px;
+	Margin:0;
+}
+h3{
+	text-align:center;
+}
+</style>
   </head>
   
   <body>
-    <div class="container">
-      <div class="header">
       <h1> SAMUEL BAHTA
       </h1>
-      <h2>Expirience</h2>
-        <h3 class="work">Trader Joe's</h3>
-        <p>
-        </p>
-        <h3 class="work">Dandelion Chocolate</h3>
-          <h5>Chocolate Maker; San Francisco, CA — 07/14-03/15</h5>
-          <p>Tasked with facilitating full process of artisan chocolate production within a small production team. 
-          Adhering to strict guidelines of the chocolate processing to ensure all final products reach the highest 
-          degree of quality and consistancy. Receiving and processing raw materials.</p>
-        <h3 class=work">Ku'l Foods</h3.>
-            <h5>Consultant; Minneapolis, MN — 07/13-04/14</h5>
-            <p>Consulting on all aspects of starting and running an artisan chocolate company. Laying out a full-spectrum business plan including market trends and product design. Locating and procuring high quality cacao as well as the machinery necessary for chocolate production. Organizing logistical and procedural guidelines for effective and efficient production of high quality chocolate. </p>
-      </div>
-      </div>  
-    <footer>4030 Minnesota Avenue, Duluth, MN, 55802 952.261.8095 smbahta37@gmail.com</footer>
+    <div>
+    <div id="myexp"; class=container style="display:none">
+<button class="accordion">Dandelion Chocolate</button>
+<div class="panel">
+  <h5>San Francisco, CA <br> 07/14-03/15</h5>
+  <h3>Chocolate Maker</h3>
+  <p>Tasked with facilitating full process of artisan chocolate production within a small production team. Adhering to strict guidelines of the chocolate processing to ensure all final products reach the highest degree of quality and consistancy. Receiving and processing raw materials.</p>
+</div>
+
+<button class="accordion">Harriet Brasserie</button>
+<div class="panel">
+	<h5>Minneapolis, MN <br> 02/13-07/14</h5>
+    <h3>Server/Shift Manager</h3>
+  <p>Management of staff during service hours. Ensuring quality service and customer relations. Ordering, receiving, organizing, and stocking dry goods as well as beverages; both alcoholic and non. Ensuring cleanliness and presentability of restaurant. Server/lead bartender. 
+</p>
+</div>
+
+<button class="accordion">Rogue Chocolatier</button>
+<div class="panel">
+	<h5>Minneapolis, MN <br> 09/09-07/14</h5>
+    <h3>Chocolate Maker</h3>
+  <p>Sole employee charged with facilitating full process of artisan chocolate production. Receiving and processing raw materials. Packaging and shipping of final product. Maintaining production facility.</p>
+</div>
+</div>
+    <nav>
+        <button onclick="expFunction()" class="btn Expir">Experience</button><br>
+		<button class="btn Edu">Education</button><br>
+		<button class="btn skills">Skills</button><br>
+		<button class="btn cont">Contact</button><br>
+	</nav>
+    </div>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+function expFunction() {
+    var x = document.getElementById("myexp");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
   </body>
  </html>
