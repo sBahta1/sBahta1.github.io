@@ -70,6 +70,29 @@ h5{
 h3{
 	text-align:center;
 }
+#myEdu {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: red;
+    margin-top: 20px;
+    border-radius:20px
+}
+#mySkil {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: orange;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#myCONT {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: purple;
+    margin-top: 20px;
+    border-radius: 20px
 </style>
   </head>
   
@@ -100,12 +123,24 @@ h3{
   <p>Sole employee charged with facilitating full process of artisan chocolate production. Receiving and processing raw materials. Packaging and shipping of final product. Maintaining production facility.</p>
 </div>
 </div>
-    <nav>
+<div id="myEdu" class=container style="display:none">
+<p>Watershed School for the Arts <br>Minneapolis, MN - 2007: High school Diploma
+</p>
+<p>City College of San Francisco<br>San Francisco, CA - 2015/2016: Economics
+</p>
+</div>
+<div id="mySkil" class=container style="display:none">
+<p>High aptitude for new skills. Excellent management of shifting and changing priorities. Excels in high paced multi-tasking roles. Excellent communicative skills. Detail oriented. Great capacity for undertaking multiple roles. </p>
+</div>
+<div id="myCONT" class=container style="display:none">
+<p> 4030 Minnesota Avenue, Duluth, MN<br>952.261.8095<br> smbahta37@gmail.com</p>
+</div>
+   <nav>
         <button onclick="expFunction()" class="btn Expir">Experience</button><br>
-		<button class="btn Edu">Education</button><br>
-		<button class="btn skills">Skills</button><br>
-		<button class="btn cont">Contact</button><br>
-	</nav>
+		<button onclick="eduFunction()" class="btn Edu">Education</button><br>
+		<button onclick="skilFunction()" class="btn skills">Skills</button><br>
+		<button onclick="contFunction()" class="btn cont">Contact</button><br>
+   </nav>
     </div>
     <script>
 var acc = document.getElementsByClassName("accordion");
@@ -124,6 +159,30 @@ for (i = 0; i < acc.length; i++) {
 }
 function expFunction() {
     var x = document.getElementById("myexp");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function eduFunction() {
+    var x = document.getElementById("myEdu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function skilFunction() {
+    var x = document.getElementById("mySkil");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+function contFunction() {
+    var x = document.getElementById("myCONT");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
