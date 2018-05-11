@@ -13,7 +13,7 @@ h1{
     font-family: Didot;
     font-size: 40px;
     color: white;
-    border-radius:5px
+    border-radius:10px
     }
 .btn:hover{
 	border:solid 2px limegreen;
@@ -24,23 +24,24 @@ h1{
     background-color:skyblue;
     }
 .Edu:hover{
-	border:solid 2px red;
-    background-color:red;
+	border:solid 2px rgb(255,173,185);
+    background-color:rgb(255,173,185);
     }
 .skills:hover{
-	border:solid 2px orange;
-    background-color:orange;
+	border:solid 2px rgb(199,255,163);
+    background-color:rgb(199,255,163);
     }
 .cont:hover{
-	border:solid 2px purple;
-    background-color:purple;
+	border:solid 2px #A57AFF;
+    background-color:#A57AFF;
     }
     .accordion {
     background-color: skyblue;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 66%;
+    float:right;
     border: none;
     text-align: center;
     outline: none;
@@ -52,16 +53,18 @@ h1{
 .active, .accordion:hover {
     background-color: white;
     color:skyblue;
-    border:solid 1px skyblue
+    border:solid 1px skyblue;
+    
 }
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgb(241,241,241);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-family:didot;
+    float:right;
+    width:60%
 }
 h5{
 	text-align:center;
@@ -72,32 +75,36 @@ h3{
 	text-align:center;
 }
 #myEdu {
-    width: 100%;
+    width: 66%;
     padding: 50px 0;
     text-align: center;
-    background-color: red;
+    background-color: rgb(255,173,185);
     margin-top: 20px;
     border-radius:20px;
-    font-family:didot;	    
+    float: right;
 }
 #mySkil {
-    width: 100%;
-    padding: 50px 0;
+    width: 66%;
+    padding: 50px 10px;
     text-align: center;
-    background-color: orange;
+    background-color: rgb(199,255,163);
     margin-top: 20px;
     border-radius: 20px;
-    font-family:didot;
+    float:right;
 }
 #myCONT {
-    width: 100%;
+    width: 66%;
     padding: 50px 0;
     text-align: center;
-    background-color: purple;
+    background-color: #A57AFF;
     margin-top: 20px;
     border-radius: 20px;
-    font-family:didot;
-	    }
+    float:right;
+}
+nav {
+	 width:33%;
+     
+    }
 </style>
   </head>
   
