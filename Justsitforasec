@@ -14,6 +14,7 @@
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    
 }
 
 .active, .accordion:hover {
@@ -43,7 +44,7 @@ h3{
 
 <h2 style="text-align:center">Samuel Bahta</h2>
 <p style="text-align:center">Work Experience</p>
-
+<div id="myexp"; class=container style="display:none">
 <button class="accordion">Dandelion Chocolate</button>
 <div class="panel">
   <h5>San Francisco, CA <br> 07/14-03/15</h5>
@@ -65,7 +66,8 @@ h3{
     <h3>Chocolate Maker</h3>
   <p>Sole employee charged with facilitating full process of artisan chocolate production. Receiving and processing raw materials. Packaging and shipping of final product. Maintaining production facility.</p>
 </div>
-
+</div>
+<button id="nvbtn"; type="button" onclick="document.getElementById('myexp').style.display='block'">Click Me!</button>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
