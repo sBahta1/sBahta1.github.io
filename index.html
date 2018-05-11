@@ -37,6 +37,7 @@ h1{
     }
     .accordion {
     background-color: skyblue;
+    font-family:didot;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -45,8 +46,9 @@ h1{
     border: none;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
     transition: 0.4s;
+    border-radius:10px;
     
 }
 
@@ -76,9 +78,11 @@ h3{
 }
 #myEdu {
     width: 66%;
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 10px;
+    text-align:center;
     background-color: rgb(255,173,185);
+    color:white;
+    font-size:20px;
     margin-top: 20px;
     border-radius:20px;
     float: right;
@@ -87,6 +91,8 @@ h3{
     width: 66%;
     padding: 50px 10px;
     text-align: center;
+    color:rgb(110,110,110);
+    font-size:20px;
     background-color: rgb(199,255,163);
     margin-top: 20px;
     border-radius: 20px;
@@ -96,6 +102,8 @@ h3{
     width: 66%;
     padding: 50px 0;
     text-align: center;
+    color:white;
+    font-size:20px;
     background-color: #A57AFF;
     margin-top: 20px;
     border-radius: 20px;
@@ -109,9 +117,10 @@ nav {
   </head>
   
   <body>
+      
       <h1> SAMUEL BAHTA
       </h1>
-    <div>
+    
     <div id="myexp"; class=container style="display:none">
 <button class="accordion">Dandelion Chocolate</button>
 <div class="panel">
@@ -145,15 +154,14 @@ nav {
 <p>High aptitude for new skills. Excellent management of shifting and changing priorities. Excels in high paced multi-tasking roles. Excellent communicative skills. Detail oriented. Great capacity for undertaking multiple roles. </p>
 </div>
 <div id="myCONT" class=container style="display:none">
-<p> 4030 Minnesota Avenue, Duluth, MN<br>952.261.8095<br> smbahta37@gmail.com</p>
+<p> 4030 Minnesota Avenue, Duluth, MN<br><br>952.261.8095<br><br> smbahta37@gmail.com</p>
 </div>
    <nav>
         <button onclick="expFunction()" class="btn Expir">Experience</button><br>
 		<button onclick="eduFunction()" class="btn Edu">Education</button><br>
 		<button onclick="skilFunction()" class="btn skills">Skills</button><br>
 		<button onclick="contFunction()" class="btn cont">Contact</button><br>
-   </nav>
-    </div>
+   </nav> 
     <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
